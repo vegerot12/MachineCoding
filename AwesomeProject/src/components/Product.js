@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {memo, useState} from 'react';
 import {StyleSheet, Text, View, Image, Pressable} from 'react-native';
 const Product = ({data, setFav}) => {
   return (
@@ -33,4 +33,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Product;
+export default memo(Product);
